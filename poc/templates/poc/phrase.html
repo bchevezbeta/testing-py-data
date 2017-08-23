@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Google Vision API POC</title>
+</head>
+
+<body>
+
+
+<h1>Results based on phrase '{{ query }}'</h1>
+
+{% for i in results %}
+
+<a href="{{ i }}">{{ i }}</a><br />
+
+{% endfor %}
+
+</body>
+</html>

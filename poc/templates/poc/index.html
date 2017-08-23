@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Google Vision API POC</title>
+</head>
+
+<body>
+
+<a href="/poc/process/">Process Image files</a> EN 
+
+<br /><br />
+
+
+<a href="/poc/process_intl/">Process Image files</a> JP
+
+<br /><br />
+
+<a href="/poc/all">All Keys</a>
+
+<hr>
+
+Search by phrase:<br />
+<form name="phrase" action="/poc/phrase/" method="GET">
+   <input type="search" name="query">
+   <button type="submit">GO</button>
+</form>
+
+<br /><br />
+
+Search by locale<br />
+<form name="locale">
+    <select name="menu" onChange="window.document.location.href=this.options[this.selectedIndex].value;" value="GO">
+        <option selected="selected">Select Locale</option>
+        <option value="/poc/locale/?query=en">EN</option>
+        <option value="/poc/locale/?query=es">ES</option>
+        <option value="/poc/locale/?query=fr">FR</option>
+        <option value="/poc/locale/?query=ja">JA</option>
+        <option value="/poc/locale/?query=de">DE</option>
+        <option value="/poc/locale/?query=it">IT</option>
+    </select>
+</form>
+
+
+</body>
+</html>

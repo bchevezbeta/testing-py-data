@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Google Vision API POC</title>
+</head>
+
+<body>
+
+
+
+<h1>All keys - {{ results|length }}</h1>
+
+<div style="float:left; width:20%;"> 
+{% for i in results %}
+
+'{{ i }}'<br /> 
+
+{% endfor %}
+
+</div>
+<div style="float:left; width:75%;"> 
+
+{% for i in data %}
+
+'{{ i }}'<br /> 
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>
